@@ -4,10 +4,7 @@ from ssg.site import Site
 
 
 def main(source="content", dest="dist"):
-    config = {
-            'config': source,
-            'dest': dest
-            }
+    config = {'source': source,'dest': dest}
 
     site = Site(**config).build()
 
